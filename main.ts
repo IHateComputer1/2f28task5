@@ -12,8 +12,8 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.AB, function () {
-    for (let index = 0; index <= 5; index++) {
-        led.plot(index, index % (index + 1))
+    for (let index = 0; index <= 24; index++) {
+        led.plot(index % 5, index / 5)
         basic.pause(200)
     }
 })
